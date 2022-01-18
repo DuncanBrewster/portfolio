@@ -23,10 +23,10 @@ const About = () => {
             <div className="a-right">
                 <h1 className="a-title">ABOUT ME</h1>
                 <p className="a-desc">
-                Ever since I’ve entered the world of software development, I have been drawn to the combination of intuition, creativity, and growth the field offers. Striving for the simplest solutions, having multiple creative paths to get there, and being challenged along the way excites me and just makes me hungrier to improve my skills.  
+                Ever since I’ve entered the world of software development, I have been drawn to the combination of intuition, creativity, and growth the field offers. Striving for the simplest solutions, having multiple creative paths to get there, and being challenged along the way excites me to continue improving my skills.  
                 </p>
                 <p className="a-sub">
-                    Below, you’ll find projects I’ve completed that showcase my skills in developing software.
+                    Below, you’ll find projects I’ve completed that showcase my proficiency in developing software.
                 </p>
                 <div className="a-logo">
                     <img src={Logo} alt="" className="a-logo-img" />
