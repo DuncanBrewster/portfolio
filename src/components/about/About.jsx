@@ -14,7 +14,7 @@ const About = () => {
                 <div className="a-card bg"></div>
                 <div className="a-card">
                     <img 
-                        src="https://images.pexels.com/photos/6392322/pexels-photo-6392322.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+                        src="https://user-images.githubusercontent.com/87501964/149871852-e2e2e9d4-4dd8-4113-9b53-01f638abd90e.png" 
                         alt="" 
                         className="a-img" 
                     />
