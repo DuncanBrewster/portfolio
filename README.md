@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/87501964/152624461-da9b948f-07f0-4b79-a479-6ef0b4017894.png)
+
+
 # [Portfolio](https://duncanbrewster.com/)
 
-![image](https://user-images.githubusercontent.com/87501964/149873141-12047adb-5984-4a8a-a690-17d1379f8ab4.png)
+
