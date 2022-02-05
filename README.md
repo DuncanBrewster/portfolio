@@ -1,11 +1,11 @@
 ![image](https://user-images.githubusercontent.com/87501964/152624461-da9b948f-07f0-4b79-a479-6ef0b4017894.png)
 
 <p align="center">
-  <a href="https://duncanbrewster.com">duncanbrewster.com</a>.
+  <a href="https://duncanbrewster.com">duncanbrewster.com</a>
 </p>
 
 <p align="center">
-  My portfolio website.
+  My portfolio website
 </p>
 
 ---
