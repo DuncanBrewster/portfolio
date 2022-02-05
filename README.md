@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  My portfolio
+  My Portfolio
 </p>
 
 ---
