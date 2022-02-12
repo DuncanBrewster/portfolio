@@ -12,7 +12,7 @@
 
 .pl-title{
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .pl-list{
@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 680px) {
     #pl{
-        padding: 10px;
+        padding: 0px 10px;
     }
 
     .pl-texts{

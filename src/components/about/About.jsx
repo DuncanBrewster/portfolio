@@ -1,5 +1,6 @@
 import "./about.css";
 import Logo from "../../img/logo.png";
+import Me from "../../img/headshot-transparent.png";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
 
@@ -11,13 +12,15 @@ const About = () => {
     return (
         <div id="a">
             <div className="a-left">
-                <div className="a-card bg"></div>
-                <div className="a-card">
-                    <img 
-                        src="https://user-images.githubusercontent.com/87501964/149871852-e2e2e9d4-4dd8-4113-9b53-01f638abd90e.png" 
-                        alt="" 
-                        className="a-img" 
-                    />
+                <div className="a-card bg1"></div>
+                <div className="a-card bg2">
+                    <div className="a-card">
+                        <img 
+                            src={Me} 
+                            alt="" 
+                            className="a-img" 
+                        />
+                    </div>
                 </div>
             </div>
             <div className="a-right">

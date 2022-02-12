@@ -7,20 +7,47 @@
     overflow: hidden;
     position: relative;
     color: white;
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
 
 h3 {
     font-size: 30px;
+    font-weight: 600;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 0%;
     transform: translate(-50%, -50%);
+    transition: 0.4s ease;
     padding: 3px;
     width: 100%;
     z-index: 0;
+}
+.tech {
+    font-size: 15px;
+    color: #7bd09b;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s ease;
+    padding: 3px;
+    width: 100%;
+    z-index: 0;
+    width: 90%;
+}
+.desc {
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s ease;
+    width: 100%;
+    z-index: 0;
+    width: 90%;
 }
 
 .p-browser{
@@ -44,7 +71,7 @@ h3 {
     position: relative;
     width: 100%;
     z-index: 1;
-    transition: all 0.2s ease;
+    transition: .3s ease-in-out;
 }
 
 .p:hover {
@@ -52,8 +79,21 @@ h3 {
 }
 
 .p-img:hover {
-    opacity: 0.1;
+    opacity: 0.05;
     z-index: 0;
+}
+
+.p:hover h3 {
+    left: 50%;
+    top: 30%;
+}
+.p:hover .tech {
+    left: 50%;
+    top: 40%;
+}
+.p:hover .desc {
+    left: 50%;
+    top: 75%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -61,12 +101,30 @@ h3 {
         width: 35%;
         height: 30vh;
     }
+
+    h3 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 680px) {
     .p{
         width: 40%;
         height: 20vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .desc{
+        display: none;
+    }
+
+    .p:hover h3 {
+        top: 40%;
+    }
+
+    .p:hover .tech {
+        top: 70%;
     }
 }
 

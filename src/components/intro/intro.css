@@ -1,27 +1,243 @@
+
 #i{
     display: flex;
     height: 100vh;
+    background: linear-gradient(rgba(0,32,63,1) 65%, rgba(128,0,128,1) 100%);
+    overflow: hidden;
 }
 
-.i-left{
+.i-bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  transition: .3s ease-in-out;
+}
+
+.sky {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+    
+.star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 1px;
+  border-radius: 885px;
+  background: linear-gradient(-45deg, 
+    #eef0f5, rgba(0, 0, 255, 0));
+  
+  -webkit-filter: drop-shadow(0 0 6px #eef1f8);
+  filter: drop-shadow(0 0 6px #d7dff0);
+  -webkit-animation: tail 9000ms ease-in-out infinite,
+    shooting 9000ms ease-in-out infinite;
+  animation: tail 9000ms ease-in-out infinite,
+    shooting 9000ms ease-in-out infinite;
+}
+    
+  /* Here we add before and after effect to star */
+/*   .star::before,
+  .star::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      -45deg,
+      rgba(0, 0, 255, 0),
+      #eaeef8,
+      rgba(0, 0, 255, 0)
+    );
+    -webkit-transform: translateX(50%) rotateZ(45deg);
+    transform: translateX(50%) rotateZ(45deg);
+    border-radius: 100%;
+    -webkit-animation: shining 9000ms ease-in-out infinite;
+    animation: shining 9000ms ease-in-out infinite;
+  } */
+  /* .star::after {
+    -webkit-transform: translateX(50%) rotateZ(-45deg);
+    transform: translateX(50%) rotateZ(-45deg);
+  } */
+    
+  /* Here we are adding location of each 
+     nth-child, animations, delays, and 
+     before and after effects to each 
+     and every balls(stars) */
+  .star:nth-child(1) {
+    top: calc(50% - -319px);
+    left: calc(50% - 413px);
+    -webkit-animation-delay: 4000ms;
+    animation-delay: 4000ms;
+  }
+
+  .star:nth-child(2) {
+    top: calc(50% - 263px);
+    left: calc(50% - 237px);
+    -webkit-animation-delay: 3300ms;
+    animation-delay: 3300ms;
+  }
+
+  .star:nth-child(3) {
+    top: calc(50% - -390px);
+    left: calc(50% - 822px);
+    -webkit-animation-delay: 4500ms;
+    animation-delay: 4500ms;
+  }
+
+  .star:nth-child(4) {
+    top: calc(50% - 29px);
+    left: calc(50% - 613px);
+    -webkit-animation-delay: 6500ms;
+    animation-delay: 6500ms;
+  }
+
+  .star:nth-child(5) {
+    top: calc(50% - 446px);
+    left: calc(50% - -122px);
+    -webkit-animation-delay: 2700ms;
+    animation-delay: 2700ms;
+  }
+
+  .star:nth-child(6) {
+    top: calc(50% - 60px);
+    left: calc(50% - 700px);
+    -webkit-animation-delay: 3800ms;
+    animation-delay: 3800ms;
+  }
+
+  .star:nth-child(7) {
+    top: calc(50% - -202px);
+    left: calc(50% - 290px);
+    -webkit-animation-delay: 50ms;
+    animation-delay: 50ms;
+  }
+
+  .star:nth-child(8) {
+    top: calc(50% - 352px);
+    left: calc(50% - -200px);
+    -webkit-animation-delay: 2450ms;
+    animation-delay: 2450ms;
+  }
+
+  .star:nth-child(9) {
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    -webkit-animation-delay: 5750ms;
+    animation-delay: 5750ms;
+  }
+
+  .star:nth-child(10) {
+    top: calc(50% - 680px);
+    left: calc(50% - -50px);
+    -webkit-animation-delay: 1350ms;
+    animation-delay: 1350ms;
+  }
+
+  .star:nth-child(11) {
+    top: calc(50% - -52px);
+    left: calc(50% - 600px);
+    -webkit-animation-delay: 7700ms;
+    animation-delay: 7700ms;
+  }
+    
+  .star:nth-child(12) {
+    top: calc(50% - -352px);
+    left: calc(50% - 700px);
+    -webkit-animation-delay: 7050ms;
+    animation-delay: 7050ms;
+  }
+    
+  /* This code will help to generate 
+  effect in tail of star */
+  @keyframes tail {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 250px;
+    }
+    38% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+    
+  /* Here we are adding webkit-animation 
+  to tail of star */
+  @-webkit-keyframes tail {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 250px;
+    }
+    38% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+    
+  /* Here we are adding webkit-animation 
+  for shooting effect */
+  @-webkit-keyframes shooting {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    40% {
+      -webkit-transform: translateX(470px);
+      transform: translateX(470px);
+    }
+    100% {
+      -webkit-transform: translateX(470px);
+      transform: translateX(470px);
+    }
+  }
+    
+  /* Here we make shooting effect */
+  @keyframes shooting {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    40% {
+      -webkit-transform: translateX(470px);
+      transform: translateX(470px);
+    }
+    100% {
+      -webkit-transform: translateX(470px);
+      transform: translateX(470px);
+    }
+  }
+
+.i-body{
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
-.i-right{
-    flex: 1;
-    position: relative;
-}
-
-.i-left-wrapper{
+.i-body-wrapper{
     padding: 50px;
-    height: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    
+    z-index: 21;
+    position: inherit;
+    top: 15%;
 }
 
 .i-intro{
@@ -30,17 +246,20 @@
 }
 
 .i-name{
-    font-size: 60px;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 .i-title{
     height: 50px;
     overflow: hidden;
+    transition: .3s ease-in-out;
 }
 
 .i-title-wrapper{
     height: 100%;
     animation: move 12s ease-in-out alternate infinite;
+    transition: .3s ease-in-out;
 }
 
 @keyframes move {
@@ -48,11 +267,11 @@
         transform: translateY(0px);
     }
     40%{
-        transform: translateY(-50px);
+        transform: translateY(-60px);
     }
 
     70%{
-        transform: translateY(-50px);
+        transform: translateY(-60px);
     }
 
     90%{
@@ -62,45 +281,33 @@
 
 .i-title-item{
     height: 50px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: #7bd09b;
-    display: flex;
-    align-items: center;
+    transition: .3s ease-in-out;
 }
 
 .i-desc{
-    font-size: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.i-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-
-.i-bg{
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    height: 100%;
-    width: 100%;
-    background-color: #7bd09b;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
 @media screen and (max-width: 680px){
     #i{
         flex-direction: column;
+        height: 100vh;
     }
 
-    .i-left-wrapper {
+    .i-body-wrapper {
         padding: 10px;
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 100%;
+        top: 25%;
     }
 
     .i-desc{

@@ -1,5 +1,5 @@
 #c{
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -37,15 +37,19 @@
 }
 
 .c-info{
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
 .c-info-item{
     display: flex;
     align-items: center;
-    margin: 70px 3%;
+    margin: 120px 3%;
     font-weight: 300;
+}
+
+.c-info-item:hover {
+    font-weight: 500;
 }
 
 .c-icon {
@@ -96,6 +100,8 @@ button{
     position: relative;
     transition: 0.5s;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    margin-bottom: 90px;
+    margin-top: 15px;
 }
 
 button:after {
@@ -121,7 +127,7 @@ button:after {
     margin-top: 15px;
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 780px){
     .c-wrapper {
         flex-direction: column;
         padding: 0px 50px;

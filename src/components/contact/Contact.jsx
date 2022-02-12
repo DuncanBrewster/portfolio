@@ -1,7 +1,7 @@
 import "./contact.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useContext, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from "../../context";
@@ -49,16 +49,16 @@ const Contact = () => {
                     </h1>
                     <div className="c-info">
                         <div className="c-info-item">
-                        <FontAwesomeIcon icon ={faPhone} className="c-icon"></FontAwesomeIcon>
-                            +1 (503) 887-2325
-                        </div>
-                        <div className="c-info-item">
-                            <FontAwesomeIcon icon ={faEnvelope} className="c-icon"></FontAwesomeIcon>
-                            duncanwbrewster@gmail.com
+                            <FontAwesomeIcon icon ={faGithub} className="c-icon"></FontAwesomeIcon>
+                            <a href="https://github.com/DuncanBrewster" target="_blank" rel="noreferrer">
+                                Github
+                            </a>
                         </div>
                         <div className="c-info-item">
                             <FontAwesomeIcon icon ={faLinkedin} className="c-icon"></FontAwesomeIcon>
-                            www.linkedin.com/in/duncanwb
+                            <a href="https://www.linkedin.com/in/duncanwb/" target="_blank" rel="noreferrer">
+                                LinkedIn
+                            </a>
                         </div>
                     </div>
                 </div>

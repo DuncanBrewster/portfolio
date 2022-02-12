@@ -10,7 +10,7 @@ const ProjectList = () => {
             </div>
             <div className="pl-list">
                 {products.map((item) => (
-                    <Project key={item.id} title={item.title} img={item.img} link={item.link}/>
+                    <Project key={item.id} title={item.title} tech={item.tech} desc={item.desc} img={item.img} link={item.link}/>
                 ))}
             </div>
         </div>
