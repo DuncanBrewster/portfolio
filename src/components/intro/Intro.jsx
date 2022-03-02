@@ -29,7 +29,7 @@ const Intro = () => {
             <div className="i-body">
                 <div className="i-body-wrapper">
                     <h2 className="i-intro">HELLO, MY NAME IS</h2>
-                    <h1 className="i-name">DUNCAN</h1>
+                    <h1 className="i-name">DUNCAN BREWSTER</h1>
                     <div className="i-title">
                         <div className="i-title-wrapper">
                             <div className="i-title-item" >WEB DEVELOPER</div>

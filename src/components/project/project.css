@@ -48,6 +48,7 @@ h3 {
     width: 100%;
     z-index: 0;
     width: 90%;
+    opacity: 0;
 }
 
 .p-browser{
@@ -78,7 +79,7 @@ h3 {
     background-color: #00203F;
 }
 
-.p-img:hover {
+.p:hover .p-img{
     opacity: 0.05;
     z-index: 0;
 }
@@ -94,6 +95,7 @@ h3 {
 .p:hover .desc {
     left: 50%;
     top: 75%;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1100px) {
