@@ -68,7 +68,7 @@ form{
 }
 
 input{
-    width: 50%;
+    width: 100%;
     height: 50px;
     border: none;
     border-bottom: 1px solid black;
@@ -82,6 +82,7 @@ textarea{
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    border: 1px solid black;
 }
 
 /*Button Below*/
@@ -161,7 +162,7 @@ button:after {
     }
 
     input {
-        width: 35%;
+        width: 100%;
         height: 40px;
         margin: 10px;
         margin-left: 0;

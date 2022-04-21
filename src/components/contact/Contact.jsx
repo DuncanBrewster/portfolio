@@ -50,13 +50,13 @@ const Contact = () => {
                     <div className="c-info">
                         <div className="c-info-item">
                             <FontAwesomeIcon icon ={faGithub} className="c-icon"></FontAwesomeIcon>
-                            <a href="https://github.com/DuncanBrewster" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/DuncanBrewster" target="_blank" rel="noreferrer" style={{color: darkMode ? "#fff" : "#000"}}>
                                 Github
                             </a>
                         </div>
                         <div className="c-info-item">
                             <FontAwesomeIcon icon ={faLinkedin} className="c-icon"></FontAwesomeIcon>
-                            <a href="https://www.linkedin.com/in/duncanwb/" target="_blank" rel="noreferrer">
+                            <a href="https://www.linkedin.com/in/duncanwb/" target="_blank" rel="noreferrer" style={{color: darkMode ? "#fff" : "#000"}}>
                                 LinkedIn
                             </a>
                         </div>
