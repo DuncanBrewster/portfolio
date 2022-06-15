@@ -26,6 +26,15 @@ export const products = [
 
     {
       id: 4,
+      title: "DIPLOMACY GUIDE",
+      tech: "React / SVGs",
+      desc: "A strategy guide for the board game diplomacy. Discover articles, openings, and videos made by the community through the years all while having an interactive map for reference.",
+      img: "https://user-images.githubusercontent.com/87501964/173902687-48291e01-763a-46b0-98e1-b1c06212dcaf.png",
+      link: "https://www.diplomacyguide.com",
+    },
+
+    {
+      id: 5,
       title: "RECIPE FINDER",
       tech: "React / Axios API",
       desc: "Type an ingredient and search the Edamam database for recipes.",
@@ -34,7 +43,7 @@ export const products = [
     },
 
     {
-      id: 5,
+      id: 6,
       title: "TO DO LIST",
       tech: "React / Local Storage",
       desc: "Use dynamic features and local storage to create your own To Do List and check off tasks.",
@@ -44,12 +53,12 @@ export const products = [
 
 
 
-    {
-      id: 6,
-      title: "CALCULATOR",
-      tech: "JavaScript",
-      desc: "Perform addition, subtraction, multiplication, and division on this keyboard accessible calculator app.",
-      img: "https://user-images.githubusercontent.com/87501964/148629269-45bbe777-2bd2-4971-ac41-e45ce64d0d08.png",
-      link: "https://duncanbrewster.github.io/calculator/",
-    },
+    // {
+    //   id: 7,
+    //   title: "CALCULATOR",
+    //   tech: "JavaScript",
+    //   desc: "Perform addition, subtraction, multiplication, and division on this keyboard accessible calculator app.",
+    //   img: "https://user-images.githubusercontent.com/87501964/148629269-45bbe777-2bd2-4971-ac41-e45ce64d0d08.png",
+      // link: "https://duncanbrewster.github.io/calculator/",
+    // },
   ];
