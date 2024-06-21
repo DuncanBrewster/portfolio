@@ -1,4 +1,4 @@
-CURRENTLY NOT PUBLIC BECAUSE I DID NOT RENEW MY DOMAIN SUBSCRIPTION
+NOTE: Currently not public because I did not renew my domain subscription
 ![image](https://user-images.githubusercontent.com/87501964/152624461-da9b948f-07f0-4b79-a479-6ef0b4017894.png)
 
 <p align="center">
